@@ -1,0 +1,176 @@
+@charset "UTF-8";
+@font-face {
+    font-family: bubblegum;
+    src: url(/_fonts/bubblegum-sans-regular.otf) format(opensize); 
+    font-weight: normal;
+}
+@font-face {
+    font-family:computer;
+    src: url(/_fonts/computer-font.ttf) format(opensize);
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #f3e7e9;
+    --cor1: #BABABA;
+    --cor2: #6E696A;
+    --cor3 :#;
+    --cor4: #;
+
+    --fonte-padrão: arial, helvetica, sans serif;
+    --fonte-computer: 'computer', cursive;
+    --fonte-glass: 'bubblegum', cursive;
+}
+
+* {
+    margin: auto;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    padding: 10px;
+    height: 150px;
+}
+
+header h1 {
+    color: white;
+    font-family: var(--fonte-glass);
+    text-align: center;
+}
+
+header p {
+    color: white;
+    font-family: var(--fonte-padrão);
+    text-align: center;
+}
+
+nav {
+    background-color: var(--cor2);
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.274);
+}
+
+nav a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--cor0);
+    color: var(--cor1);
+    text-decoration: block;
+
+}
+
+body {
+    background-color: var(--cor0);
+}
+
+h1.cabecario {
+    font-family: var(--fonte-glass);
+    background: white;
+    
+}
+
+p.inform {
+    color: var(--cor1);
+    font-size: 0.85em;
+}
+
+main {
+    background-color: white;
+    border-radius: 2px;
+    max-width: 800px;
+    margin-bottom: 10px;
+    padding: 10px;
+    line-height: 2em;
+    
+}
+
+main h1, h2 {
+    background-image: linear-gradient(to right, var(--cor1), var(--cor0));
+    font-size: 1.2em;
+    font-family: var(--fonte-computer);
+}
+
+main p {
+    font-family: var(--fonte-padrão);
+    text-align: justify;
+    text-indent: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+div.video {
+    background-color: var(--cor2);
+    position: relative;
+    padding: 20px;
+    padding-bottom: 53.8%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 0.1%;
+    left: 0.1%;
+    width: 100%;
+    height: 100%;
+
+}
+
+aside {
+    font-family: var(--fonte-padrão);
+    background-color: var(--cor1);
+    border-radius: 3px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.247);
+    text-align: justify;
+    text-indent: 10px;
+    line-height: 2em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 800px;
+
+}
+
+div.segundovideo {
+    background-color: var(--cor2);
+    position: relative;
+    padding: 20px;
+    padding-bottom: 53.8%;
+}
+
+div.segundovideo > iframe {
+    position: absolute;
+    top: 0.1%;
+    left: 0.1%;
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background-color: var(--cor2);
+    padding: 5px;
+}
+
+footer p {
+    color: white;
+    font-family: var(--fonte-padrão);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+
+}
+
+footer a:hover {
+    color: var(--cor1);
+    text-decoration: underline;
+}
+
+
+
+
